@@ -48,3 +48,9 @@ console.log(colorsObj.length);
 * 이것은 배열과 객체가 자신의 부모인 프로토타입 객체가 서로 다르기 때문이다. */
 colorsArray.push('red');
 colorsObj.push('red');
+/* 객체 리터럴 방식으로 생성한 객체의 경우, 객체 표준 메서드를 저장하고 있는 Object.prototype 객체가 프로토 타입이다.
+* 반면에 배열의 경우 Array.prototype 객체가 부모객체인 프로토타입이 된다.
+* Array.prototype 객체는 배열에서 사용할 push(), pop() 같은 표준 메서드를 포함하고 있다.
+* 그리고 Array.prototype 객체의 프로토 타입은 Object.prototype 객체가 된다.
+* 객체는 자신의 프로토타입이 가지는 모든 프로퍼티 및 메서드들을 상속받아 사용할 수 있으므로,
+* 배열은 Array.prototype에 포함된 배열 표준 메서드와 Object.prototype의 표준 메서드들을 모두 사용할 수 있다.   */
