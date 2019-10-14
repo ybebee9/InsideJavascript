@@ -27,3 +27,5 @@ var myObject = {
         func2();
     }
 };
+
+myObject.func1();
