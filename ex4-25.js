@@ -9,4 +9,4 @@ var sayFoo = function () {
     /*  sayFoo() 함수 호출 시 this는 전역 객체에 바인딩 된다고 했으므로 전역 객체인 window에 바인딩 된다.
     *   때문에 this.test는 window.test를 의미한다. */
     console.log(this.test); // This is test
-}
+};
